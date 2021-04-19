@@ -1,0 +1,36 @@
+#include<iostream> 
+#include<math.h> 
+using namespace std; 
+int main() 
+{
+ float a,b,c,s,r,area; 
+int ch; cout<<"1.Area Of Circle"; 
+cout<<"\n2.Area Of Rectangle"; 
+cout<<"\n3.Area Of Triangle \n";
+cout<<"\n4.Area Of Square \n";   
+cout<<"\nEnter Your Choice :"; 
+cin>>ch; switch(ch) 
+{
+case 1: 
+{ cout<<"\nEnter Radius Of The Circle: ";
+cin>>r; area=3.14*r*r; break; 
+} 
+case 2:
+{
+cout<<"\nEnter Length And Breadth Of Rectangle:"; 
+cin>>a>>b; area=a*b; break; 
+} 
+case 3: 
+{ 
+cout<<"\nEnter Three Sides Of The Triangle:"; 
+cin>>a>>b>>c; s=(a+b+c)/2; area=sqrt(s*(s-a)*(s-b)*(s-c)); 
+break; 
+}
+  cout<<"\nEnter One Sides Of The Square:"; 
+cin>>a;
+area=4 *a;
+break; 
+} 
+cout<<"Area = "<<area<<endl; 
+return 0; 
+}
