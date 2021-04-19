@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double pi = 3.14;
+	double om;
+	cout << "Kirjuta ringi pindala: ";
+	cin >> pi;
+	cout << "ümbermööt: " << om*2 << endl;
+	cout << "pindala: " << pi*om*2 << endl;
+	cin >> om;
+
+	system("pause");
+	return 0;
+}
