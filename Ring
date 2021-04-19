@@ -2,14 +2,19 @@
 using namespace std;
 int main()
 {
-	double pi = 3.14;
-	double om;
-	cout << "Kirjuta ringi pindala: ";
-	cin >> pi;
-	cout << "ümbermööt: " << om*2 << endl;
-	cout << "pindala: " << pi*om*2 << endl;
-	cin >> om;
+double pi = 3,14;
+double input = 0;
+double pindala = 0;
+double ümbermööt = 0;
 
-	system("pause");
-	return 0;
+cout<<"Sisestage raadius"<<endl;
+cin>>input;
+
+pindala = (pi)*(input^2);
+ümbermööt = 2*pi*input;
+
+cout<<"Pindala om: "<<pindala<<endl;
+cout<<"Ümbermööt on: "<<ümbermööt<<endl;
+
+getch ();
 }
